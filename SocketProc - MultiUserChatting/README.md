@@ -81,7 +81,7 @@ if(sock==-1) error_handling("socket() error");
 	pthread_join(rcv_thread, &thread_return);
 </code></pre>
 
-  메시지 수신 함수
+  메시지 송신 함수
 <pre><code>
   void* send_msg(void* arg) {
 	int sock=*((int*)arg);
