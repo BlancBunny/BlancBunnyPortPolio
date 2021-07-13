@@ -1,5 +1,5 @@
 # C언어 연결 리스트 기반 삽입 정렬 구현 코드
-[코드 전문]()
+[코드 전문](https://github.com/BlancBunny/BlancBunnyPortPolio/blob/main/CProc%20-%20Linked_List%2BSelection_Sort/StudyC/StudyC/insertionSort_linkedList.c)
 
 ## 구현 목표
 대소문자 구분없이 입력된 문자열을 삽입정렬을 사용하여 정렬하고 대소문자 분리   
