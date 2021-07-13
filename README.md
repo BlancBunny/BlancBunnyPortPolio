@@ -3,7 +3,7 @@
 
 1. HTML 기반 웹페이지 제작   
 2. C – Linked-List + Selection Sort   
-2. C, 소켓프로그래밍 – Multi User Chatting 프로그램   
+~~2. C, 소켓프로그래밍 – Multi User Chatting 프로그램~~ 
 3. C++ - 고스톱 게임 프로그램   
 4. ASP.NET – MVC 패턴 웹 어플리케이션 제작   
    
