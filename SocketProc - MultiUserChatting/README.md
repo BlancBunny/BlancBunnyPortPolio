@@ -12,7 +12,7 @@
 [코드 전문](https://github.com/BlancBunny/BlancBunnyPortPolio/blob/main/SocketProc%20-%20MultiUserChatting/chat_client.c)
 
 ### 네트워크 환경
-![image](https://user-images.githubusercontent.com/77951828/125376791-b682fe80-e3c6-11eb-8e25-2e3f89ad470f.png)
+![image](https://user-images.githubusercontent.com/77951828/125376905-ef22d800-e3c6-11eb-8384-f6e1a6630a4f.png)
 
 ### 실행 결과
 [사진 첨부 자리]()
