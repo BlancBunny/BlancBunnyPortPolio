@@ -8,7 +8,7 @@
 4. ASP.NET – MVC 패턴 웹 어플리케이션 제작   
    
 C# Winform Application   
-	1. 측정 수치 모니터링(Winform) + 실시간 수치 확인과 히스토리 확인(WPF) + DB 연동 
+	1. 측정 수치 모니터링(Winform) + 실시간 수치 확인과 히스토리 확인(WPF) + DB 연동    
 	2. 도서 대여점 관리 프로그램   
 C# WPF Application Practice   
 	1. Snake Bike 게임 제작   
