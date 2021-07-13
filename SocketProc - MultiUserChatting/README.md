@@ -6,6 +6,22 @@
 ### 서버 모듈
 [코드 전문](https://github.com/BlancBunny/BlancBunnyPortPolio/blob/main/SocketProc%20-%20MultiUserChatting/chat_server.c)
 
+사용법 : ./chatserver <Port>   
+
+  socket 생성
+'''
+    serv_sock=socket(PF_INET, SOCK_STREAM, 0);
+'''
+  
+  bind(), listen()
+'''
+    if(bind(serv_sock, (struct sockaddr*) &serv_adr, sizeof(serv_adr)) == -1)
+	  	error_handling("bind() error");
+  	if(listen(serv_sock, 5) == -1) 
+  		error_handling("listen() error");
+'''
+  
+  
 ----------------
 
 ### 클라이언트 모듈 
