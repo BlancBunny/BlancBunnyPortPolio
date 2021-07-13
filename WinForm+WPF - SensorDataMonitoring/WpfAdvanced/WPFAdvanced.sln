@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfLoginApp", "WpfLoginApp\WpfLoginApp.csproj", "{D500398C-4071-4665-8BED-3B14016059BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernUITestApp", "ModernUITestApp\ModernUITestApp.csproj", "{80D63DC4-9EDE-411A-9F18-289DF0DE49C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPracticeApp", "WpfPracticeApp\WpfPracticeApp.csproj", "{6A3920AD-FCDD-44C2-8F1A-7D6CB2D70D14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SensorMonitoringApp", "SensorMonitoringApp\SensorMonitoringApp.csproj", "{36E4CB1A-6C50-4CE0-A618-02DA8EEBBECA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTestApp", "WpfTestApp\WpfTestApp.csproj", "{5D7B3C48-8A4E-43FF-B016-5054577E2D6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FineDustMonitoring", "DustMonitoring\FineDustMonitoring.csproj", "{645A4622-4AC6-4196-B1C7-821A7F59FB42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D500398C-4071-4665-8BED-3B14016059BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D500398C-4071-4665-8BED-3B14016059BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D500398C-4071-4665-8BED-3B14016059BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D500398C-4071-4665-8BED-3B14016059BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80D63DC4-9EDE-411A-9F18-289DF0DE49C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80D63DC4-9EDE-411A-9F18-289DF0DE49C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80D63DC4-9EDE-411A-9F18-289DF0DE49C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80D63DC4-9EDE-411A-9F18-289DF0DE49C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A3920AD-FCDD-44C2-8F1A-7D6CB2D70D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A3920AD-FCDD-44C2-8F1A-7D6CB2D70D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A3920AD-FCDD-44C2-8F1A-7D6CB2D70D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A3920AD-FCDD-44C2-8F1A-7D6CB2D70D14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E4CB1A-6C50-4CE0-A618-02DA8EEBBECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E4CB1A-6C50-4CE0-A618-02DA8EEBBECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E4CB1A-6C50-4CE0-A618-02DA8EEBBECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E4CB1A-6C50-4CE0-A618-02DA8EEBBECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D7B3C48-8A4E-43FF-B016-5054577E2D6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D7B3C48-8A4E-43FF-B016-5054577E2D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D7B3C48-8A4E-43FF-B016-5054577E2D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D7B3C48-8A4E-43FF-B016-5054577E2D6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{645A4622-4AC6-4196-B1C7-821A7F59FB42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{645A4622-4AC6-4196-B1C7-821A7F59FB42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{645A4622-4AC6-4196-B1C7-821A7F59FB42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{645A4622-4AC6-4196-B1C7-821A7F59FB42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90909E73-5D0C-4651-A218-E1A27807382D}
+	EndGlobalSection
+EndGlobal
