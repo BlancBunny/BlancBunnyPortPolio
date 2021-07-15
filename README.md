@@ -3,9 +3,9 @@
 
 1. HTML 기반 웹페이지 제작   
 ~~2. C – Linked-List + Selection Sort~~ 2021-07-13 오후 완료   
-~~2. C, 소켓프로그래밍 – Multi User Chatting 프로그램~~ 2021-07-13 오전 완료   
-3. C++ - 고스톱 게임 프로그램   
-4. ASP.NET – MVC 패턴 웹 어플리케이션 제작   
+~~3. C, 소켓프로그래밍 – Multi User Chatting 프로그램~~ 2021-07-13 오전 완료   
+4. C++ - 고스톱 게임 프로그램   
+5. ASP.NET – MVC 패턴 웹 어플리케이션 제작   
    
 C# Winform Application   
 	~~1. 측정 수치 모니터링(Winform) + 실시간 수치 확인과 히스토리 확인(WPF) + DB 연동~~ 2021-07-15 오전 완료   
