@@ -1,0 +1,91 @@
+﻿<mah:MetroWindow 
+    x:Class="FineDustMonitoring.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+    xmlns:local="clr-namespace:FineDustMonitoring"
+    mc:Ignorable="d"
+    Title="FineDust Monitoring System" Height="450" Width="720" Icon="storm.ico"
+    Loaded="MetroWindow_Loaded" Background="AliceBlue">
+
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+
+        <ComboBox Name="cboStations" Grid.Row="0" 
+                  Margin="250,2" 
+                  mah:TextBoxHelper.Watermark="측정소를 선택하세요"
+                  mah:TextBoxHelper.UseFloatingWatermark="True"
+                  mah:TextBoxHelper.ClearTextButton="True"
+                  SelectionChanged="cboStations_SelectionChanged" RenderTransformOrigin="0.5,0.5">
+            
+        </ComboBox>
+
+        <!-- AutoGenerateColumns = true : default -->
+        <DataGrid Name="dgrFineDustInfo" Grid.Row="1" Margin="5"
+                  SelectionUnit="FullRow" AutoGenerateColumns="False" 
+                  Style="{StaticResource MahApps.Styles.DataGrid.Azure}" Grid.ColumnSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding DataTime}" Header="측정일시"/>
+                <DataGridTemplateColumn Header="통합대기환경수치">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <mah:MetroProgressBar x:Name="PriceProgressBar"
+                                                  Height="20"
+                                                  Margin="5 2"
+                                                  VerticalAlignment="Center"
+                                                  Background="Transparent"
+                                                  Foreground="{DynamicResource MahApps.Brushes.Accent}"
+                                                  Maximum="400"
+                                                  Minimum="0"
+                                                  Value="{Binding Khai}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Binding="{Binding SO2}" Header="아황산가스">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding CO}" Header="일산화탄소">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding O3}" Header="오존">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding PM10}" Header="미세먼지(PM10)">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding PM25}" Header="초미세먼지(PM2.5)">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+    </Grid>
+</mah:MetroWindow>
