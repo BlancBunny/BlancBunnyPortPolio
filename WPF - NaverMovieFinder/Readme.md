@@ -99,3 +99,35 @@ foreach (var item in jArray) // 데이터 항목별로 분류하여 MovieItem �
  grdData.DataContext = movieItems; // 리스트를 데이터그리드에 표시 
 </code></pre>
 
+#### 유튜브 API로 트레일러 요청 
+
+private async Task LoadDataCollection()
+{
+    var youtubeService = new YouTubeService(new BaseClientService.Initializer()
+    {
+        ApiKey = "AIzaSyBDO048WJAAPZlGUgAmV16xuhCXcWnA6YI",
+        ApplicationName = this.GetType().ToString()
+    });
+
+    var request = youtubeService.Search.List("Snippet");
+    request.Q = lblMovieName.Content.ToString();
+    request.MaxResults = 10;
+
+    var response = await request.ExecuteAsync();
+
+    foreach (var item in response.Items)
+    {
+        if (item.Id.Kind.Equals("youtube#video"))
+        {
+            YoutubeItem youtube = new YoutubeItem()
+            {
+                Title = item.Snippet.Title,
+                Author = item.Snippet.ChannelTitle,
+                URL = $"https://www.youtube.com/watch?v={item.Id.VideoId}"
+            };
+
+            youtube.Thumbnail = new BitmapImage(new Uri(item.Snippet.Thumbnails.Default__.Url, UriKind.RelativeOrAbsolute));
+            lsvYoutubeSearch.Items.Add(youtube);
+        }
+    }
+}
