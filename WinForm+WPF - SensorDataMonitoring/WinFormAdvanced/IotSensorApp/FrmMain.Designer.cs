@@ -161,7 +161,7 @@ namespace IotSensorApp
             this.groupBox1.Size = new System.Drawing.Size(352, 78);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "PhotoResistor";
+            this.groupBox1.Text = "MeasureValue";
             // 
             // prbPhotoResistor
             // 
