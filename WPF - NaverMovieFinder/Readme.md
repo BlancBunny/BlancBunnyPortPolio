@@ -4,7 +4,7 @@
 [MAIN WINDOW](https://github.com/BlancBunny/BlancBunnyPortPolio/blob/main/WPF%20-%20NaverMovieFinder/NaverMovieFinder/NaverMovieFinder/MainWindow.xaml)   
 [MAIN WINDOW 비하인드 코드](https://github.com/BlancBunny/BlancBunnyPortPolio/blob/main/WPF%20-%20NaverMovieFinder/NaverMovieFinder/NaverMovieFinder/MainWindow.xaml.cs)   
 [TRAILER WINDOW](https://github.com/BlancBunny/BlancBunnyPortPolio/blob/main/WPF%20-%20NaverMovieFinder/NaverMovieFinder/NaverMovieFinder/TrailerWindow.xaml)   
-[DB 생성용 SQL](https://github.com/BlancBunny/BlancBunnyPortPolio/blob/main/WPF%20-%20NaverMovieFinder/NaverMovieFinder/NaverMovieFinder/TrailerWindow.xaml)   
+[DB 생성용 SQL](https://github.com/BlancBunny/BlancBunnyPortPolio/blob/main/WPF%20-%20NaverMovieFinder/NaverMovieFinder/NaverMovieFinder/SQL/OpenApiLab.sql)   
 
 + UI - mahApps:metro 프레임워크 기반 
 + Naver OpenAPI 검색 기능 활용
@@ -22,6 +22,9 @@
 
 #### 즐겨찾기 목록 - DB 연동 
 ![image](https://user-images.githubusercontent.com/77951828/125888395-2d5d91ff-5c53-4f98-9ec9-221b37790783.png)
+
+#### 네이버 영화 페이지 
+![GOMCAM 20210716_1258320430](https://user-images.githubusercontent.com/77951828/125895844-62a66102-3bc1-4bc4-bd5f-6e1c439b6bb2.gif)
 
 #### 트레일러 보기 - 유튜브 연동 
 ![image](https://user-images.githubusercontent.com/77951828/125888782-191e4b44-2eaf-4cf5-9898-92ffddcd0241.png)
