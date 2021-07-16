@@ -35,3 +35,67 @@
 
 ## 주요 코드 
 
+#### 즐겨찾기 추가
+
+<pre><code>
+List<FavoriteMovies> movies = new List<FavoriteMovies>();
+foreach (MovieItem item in grdData.SelectedItems)
+{
+    FavoriteMovies temp = new FavoriteMovies()
+    {
+        Title = item.Title,
+        Link = item.Link,
+        Image = item.Image,
+        SubTitle = item.SubTitle,
+        PubDate = item.PubDate,
+        Director = item.Director,
+        Actor = item.Actor,
+        UserRating = item.UserRating,
+        RegDate = DateTime.Now
+    };
+    movies.Add(temp);
+}
+
+using (var ctx = new OpenApiLabEntities()) // EntityFramework DB open 
+{
+        ctx.Set<FavoriteMovies>().AddRange(movies);
+        ctx.SaveChanges(); // Commit 
+        stsResult.Content = $"즐겨찾기 {movies.Count}건 추가 완료.";
+        await this.ShowMessageAsync("저장 성공", $"영화 {movies.Count}개를 즐겨찾기에 추가했습니다", 
+            MessageDialogStyle.Affirmative, null);
+}    
+</code></pre>
+
+#### 네이버 API로부터 데이터 요청 
+
+<pre><code>
+string openApiUrl = $"https://openapi.naver.com/v1/search/movie?start=1&display=30&query={movieName}";
+
+string resJson = common.GetApiResult(openApiUrl, clientID, clientSecret); // 네이버에 데이터 요청 
+
+var parsedJson = JObject.Parse(resJson); 데이터 키 별로 parsing
+
+int total = Convert.ToInt32(parsedJson["total"]);
+int display = Convert.ToInt32(parsedJson["display"]);
+var items = parsedJson["items"];
+JArray jArray = (JArray)items;
+
+List<MovieItem> movieItems = new List<MovieItem>();
+
+foreach (var item in jArray) // 데이터 항목별로 분류하여 MovieItem 객체에 저장 
+{
+    MovieItem movie = new MovieItem( 
+        common.StripHtmlTag(item["title"].ToString()),
+        item["link"].ToString(),
+        item["image"].ToString(),
+        item["subtitle"].ToString(),
+        item["pubDate"].ToString(),
+        common.StripPipe(item["director"].ToString()),
+        common.StripPipe(item["actor"].ToString()),
+        item["userRating"].ToString()
+        );
+    movieItems.Add(movie); // 저장된 객체를 영화 클래스 리스트에 저장 
+}
+ grdData.DataContext = movieItems; // 리스트를 데이터그리드에 표시 
+</code></pre>
+
