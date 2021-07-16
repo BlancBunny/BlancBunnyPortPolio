@@ -1,9 +1,10 @@
-# NaverMovieFinder
+# Naver OpenAPI - MovieFinder
 #### Naver Developers Open API를 활용한 영화 검색 프로그램 
 
-[MAIN WINDOW]()   
-[MAIN WINDOW 비하인드 코드]()   
-[TRAILER WINDOW]()   
+[MAIN WINDOW](https://github.com/BlancBunny/BlancBunnyPortPolio/blob/main/WPF%20-%20NaverMovieFinder/NaverMovieFinder/NaverMovieFinder/MainWindow.xaml)   
+[MAIN WINDOW 비하인드 코드](https://github.com/BlancBunny/BlancBunnyPortPolio/blob/main/WPF%20-%20NaverMovieFinder/NaverMovieFinder/NaverMovieFinder/MainWindow.xaml.cs)   
+[TRAILER WINDOW](https://github.com/BlancBunny/BlancBunnyPortPolio/blob/main/WPF%20-%20NaverMovieFinder/NaverMovieFinder/NaverMovieFinder/TrailerWindow.xaml)   
+[DB 생성용 SQL](https://github.com/BlancBunny/BlancBunnyPortPolio/blob/main/WPF%20-%20NaverMovieFinder/NaverMovieFinder/NaverMovieFinder/TrailerWindow.xaml)   
 
 + UI - mahApps:metro 프레임워크 기반 
 + Naver OpenAPI 검색 기능 활용
