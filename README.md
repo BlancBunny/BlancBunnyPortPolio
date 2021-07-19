@@ -12,7 +12,7 @@ C# Winform Application
 	2. 도서 대여점 관리 프로그램   
 C# WPF Application Practice   
 	1. Snake Bike 게임 제작   
-	~~2. Naver API 연동 영화 검색 프로그램~~ 2021-07-16 오후 완료
+	~~2. Naver API 연동 영화 검색 프로그램~~ 2021-07-16 오후 완료   
 	~~3. 공공기관 API 연동 미세먼지 모니터링 프로그램~~ 2021-07-16 오전 완료   
 	4. ERP 프로그램 (자재 관리)   
 	5. ERP 프로그램 (공정 관리) + 라즈베리파이 센서 연동   
