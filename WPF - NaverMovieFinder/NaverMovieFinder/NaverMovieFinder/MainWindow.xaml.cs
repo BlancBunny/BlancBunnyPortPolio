@@ -144,7 +144,7 @@ namespace NaverMovieFinder
                 try
                 {
                     ctx.Set<FavoriteMovies>().AddRange(movies);
-                    ctx.SaveChanges();
+                    ctx.SaveChanges(); // commit 
                     stsResult.Content = $"즐겨찾기 {movies.Count}건 추가 완료.";
                     await this.ShowMessageAsync("저장 성공", $"영화 {movies.Count}개를 즐겨찾기에 추가했습니다", 
                         MessageDialogStyle.Affirmative, null);
