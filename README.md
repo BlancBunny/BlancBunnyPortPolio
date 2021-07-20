@@ -9,7 +9,7 @@
    
 C# Winform Application   
 	~~1. 측정 수치 모니터링(Winform) + 실시간 수치 확인과 히스토리 확인(WPF) + DB 연동~~ 2021-07-15 오전 완료   
-	2. 도서 대여점 관리 프로그램   
+	~~2. 도서 대여점 관리 프로그램~~ 2021-07-20 오전 완료
 C# WPF Application Practice   
 	1. Snake Bike 게임 제작   
 	~~2. Naver API 연동 영화 검색 프로그램~~ 2021-07-16 오후 완료   
