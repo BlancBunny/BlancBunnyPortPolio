@@ -1,5 +1,5 @@
 # BlancBunnyPortPolio
-김현수 포트폴리오 목록 (2021-07-13 ~ 현재 정리중)
+김현수 포트폴리오 목록 (2021-07-13 ~ 현재 정리중, )
 
 ~~C – Linked-List + Selection Sort~~ 2021-07-13 오후 완료   
 ~~C, 소켓프로그래밍 – Multi User Chatting 프로그램~~ 2021-07-13 오전 완료   
