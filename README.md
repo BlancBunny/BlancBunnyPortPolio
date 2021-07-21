@@ -16,3 +16,7 @@ C# WPF Application Practice
 	~~3. 공공기관 API 연동 미세먼지 모니터링 프로그램~~ 2021-07-16 오전 완료   
 	4. ERP 프로그램 (자재 관리)   
 	5. ERP 프로그램 (공정 관리) + 라즈베리파이 센서 연동   
+
+Hardware   
++ 라즈베리파이 GPIO 제어 
++ MQTT 메시지 주고받기 
