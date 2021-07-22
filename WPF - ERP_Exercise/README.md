@@ -1,9 +1,9 @@
 # ERP 제작 실습 프로젝트 - 데스크탑 앱(ERP 재고관리) 
-[메인 Xaml](https://github.com/BlancBunny/BlancBunnyPortPolio/blob/main/WPF%20-%20ERP_Exercise/ERP_Exercise/ERP_Exercise/MainWindow.xaml)
-[메인 Xaml.cs](https://github.com/BlancBunny/BlancBunnyPortPolio/blob/main/WPF%20-%20ERP_Exercise/ERP_Exercise/ERP_Exercise/MainWindow.xaml.cs)
+[메인 Xaml](https://github.com/BlancBunny/BlancBunnyPortPolio/blob/main/WPF%20-%20ERP_Exercise/ERP_Exercise/ERP_Exercise/MainWindow.xaml)    
+[메인 Xaml.cs](https://github.com/BlancBunny/BlancBunnyPortPolio/blob/main/WPF%20-%20ERP_Exercise/ERP_Exercise/ERP_Exercise/MainWindow.xaml.cs)    
 ## 프로젝트 설명 
 
-+ ERP의 개념에 대해 배우고 약식으로 가상의 기업에서 사용하는 간이 ERP를 제작   
++ ERP의 개념에 대해 학습하고 약식으로 가상의 기업에서 사용하는 간이 ERP를 제작   
 + 실제 기업에서의 사용 관련 정보가 부족하므로 제품의 입/출고 부분은 구현하지 않고   
 <b>사용자 관리창과 현재 사용자의 정보 수정 및 관리 창고의 목록 출력, 추가, 수정 기능</b>만 구현   
 + 모든 데이터는 데이터베이스에 저장 및 연동 
