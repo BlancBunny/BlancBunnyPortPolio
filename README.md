@@ -19,4 +19,5 @@ C# WPF Application
 
 Hardware   
 + 라즈베리파이 GPIO 제어 
-+ MQTT 메시지 주고받기 
++ MQTT 메시지 주고받기 2021-07-26 라즈베리파이 다른 프로젝트에 사용중 (보류) 
++ Magic Mirror 실습 
