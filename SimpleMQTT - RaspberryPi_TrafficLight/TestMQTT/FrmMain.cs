@@ -105,7 +105,7 @@ namespace DeviceSubApp
             message = "s";
             // Publish
             Publish(message);
-            LblAlert.Text = "회전 시작";
+            LblAlert.Text = "루프 시작";
         }
 
         private void BtnStop_Click(object sender, EventArgs e)
@@ -122,7 +122,7 @@ namespace DeviceSubApp
             message = "t";
             // Publish
             Publish(message);
-            LblAlert.Text = "회전 끝";
+            LblAlert.Text = "루프 끝";
         }
 
         private void BtnPause_Click(object sender, EventArgs e)
