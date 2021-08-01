@@ -3,7 +3,6 @@
 
 [~~C – Linked-List + Selection Sort~~](https://github.com/BlancBunny/BlancBunnyPortPolio/tree/main/CProc%20-%20Linked_List%2BSelection_Sort/StudyC) 2021-07-13 오후 완료   
 [~~C, 소켓프로그래밍 – Multi User Chatting 프로그램~~](https://github.com/BlancBunny/BlancBunnyPortPolio/tree/main/SocketProc%20-%20MultiUserChatting) 2021-07-13 오전 완료   
-+ HTML 기반 웹페이지 제작     
 + [~~C++ - 고스톱 게임 프로그램~~](https://github.com/BlancBunny/BlancBunnyPortPolio/tree/main/Cpp%20-%20FlowerCardGame) 2021-07-20 오전 완료   
 + ASP.NET – MVC 패턴 웹 어플리케이션 제작   
    
