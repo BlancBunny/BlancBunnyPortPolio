@@ -92,8 +92,8 @@ $ npm run tokens
 ------------------------------
 
 #### 6. 화면 설정 (css) 
-화면에 표시되는 각 패키지가 배경화면과 겹쳐서 잘 안보이기 때문에   
-반투명한 배경을 각 요소에 추가 (alpha = 0.3) 
-![image](https://user-images.githubusercontent.com/77951828/127793689-33a985bc-ddbe-4090-99d0-23a991fa9114.png)
-모듈 별로 css 파일을 찾아 요소 별로 background 지정 
+화면에 표시되는 각 패키지가 배경화면과 겹쳐서 잘 안보이기 때문에      
+반투명한 배경을 각 요소에 추가 (alpha = 0.3)    
+![image](https://user-images.githubusercontent.com/77951828/127793689-33a985bc-ddbe-4090-99d0-23a991fa9114.png)    
+=> 모듈 별로 css 파일을 찾아 요소 별로 background 지정    
 
