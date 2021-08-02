@@ -1,23 +1,88 @@
-# BlancBunnyPortPolio
-김현수 포트폴리오 목록 (2021-07-13 ~ 현재 정리중, )
+# 라즈베리파이 기반 Open API 활용 스마트미러 제작
 
-~~C – Linked-List + Selection Sort~~ 2021-07-13 오후 완료   
-~~C, 소켓프로그래밍 – Multi User Chatting 프로그램~~ 2021-07-13 오전 완료   
-+ HTML 기반 웹페이지 제작     
-+ ~~C++ - 고스톱 게임 프로그램~~ 2021-07-20 오전 완료   
-+ ASP.NET – MVC 패턴 웹 어플리케이션 제작   
-   
-C# Winform Application   
-	~~1. 측정 수치 모니터링(Winform) + 실시간 수치 확인과 히스토리 확인(WPF) + DB 연동~~ 2021-07-15 오전 완료   
-	~~2. 도서 대여점 관리 프로그램~~ 2021-07-20 오전 완료    
-C# WPF Application       
-	1. Snake Bike 게임 제작   
-	~~2. Naver API 연동 영화 검색 프로그램~~ 2021-07-16 오후 완료   
-	~~3. 공공기관 API 연동 미세먼지 모니터링 프로그램~~ 2021-07-16 오전 완료   
-	~~4. ERP 프로그램 (창고 관리)~~ 2021-07-22 오후 완료   
-	5. MES 프로그램 (공정 관리) + 라즈베리파이 센서 연동   
+## 실행 화면 
+메인 실행 화면  
+![image](https://user-images.githubusercontent.com/77951828/127789332-141d89f3-7fae-4acd-a746-4f8bf8adf824.png)   
 
-Hardware   
-+ 라즈베리파이 GPIO 제어 
-+ MQTT 메시지 주고받기 2021-07-26 라즈베리파이 다른 프로젝트에 사용중 (보류) 
-+ Magic Mirror 실습 
+
+실행 환경 전체   
+![image](https://user-images.githubusercontent.com/77951828/127789432-384c4bc8-c286-42e9-aa28-a8ab5e47c9b7.png)   
+ 
+
+## 실습 환경 
+H/W : Raspberry Pi 4 B   
+OS : Linux Raspbian 5.10.17   
+Mic : 오디오 IC 개발 도구 ReSpeaker 4Mic Array for Raspberry Pi   
+
+## 구현 순서 
+MagicMirror 패키지 설치 -> 구글 캘린더 (내 스케줄 확인) 연동 -> 뉴스 feed 표시 -> 날씨, 미세먼지 출력 모듈 설치   
+-> 구글 포토 연동으로 배경화면 설정 -> 구글 어시스턴트 연동 음성 인식 
+
+#### 0. MagicMirror 패키지 설치 
+https://github.com/MichMich/MagicMirror
+리포지토리 작업 폴더에 복사후 npm 을 활용하여 패키지 인스톨    
+
+---------------------------
+
+#### 1. Google Calendar 
+구글 캘린더에 입력한 스케줄을 스마트미러 화면에 표시 
+
+1) 구글 캘린더에 여러 스케줄 표시
+![image](https://user-images.githubusercontent.com/77951828/127790237-8aef5245-0c64-4f99-82c3-dd6bd77433e5.png)   
+
+2) 계정 고유 연동 주소를 js 파일에 복사   
+![image](https://user-images.githubusercontent.com/77951828/127790309-c407409e-8084-44cd-83ac-174e5a4caee4.png)   
+![image](https://user-images.githubusercontent.com/77951828/127790163-08a7d997-4e75-4349-8ecd-24609b5bc3f0.png)   
+
+
+3) 캘린더 연동 결과   
+![image](https://user-images.githubusercontent.com/77951828/127790242-8f0f1d6e-97bc-427b-a586-8f9e878793df.png)  
+
+----------------------------
+
+#### 2. 뉴스 API 연동 
+사용할 뉴스 Feed Url : https://news.google.com/rss?pz=1&hl=ko&topic=po&gl=KR&ceid=KR:ko   
+![image](https://user-images.githubusercontent.com/77951828/127790852-f101032d-950a-4aba-964a-4c935e88b755.png)   
+
+화면 하단에 불러온 뉴스 표시   
+![image](https://user-images.githubusercontent.com/77951828/127790937-7c65211f-59ae-4467-86fa-236827839f14.png)   
+
+-----------------------------
+
+#### 3. 날씨, 미세먼지 출력 
+1) 패키지 설치 : [MMM-Weather](https://github.com/bugsounet/MMM-Weather), [MMM-Airquality](https://github.com/CFenner/MMM-AirQuality)   
+2) OpenWeather 사이트 로그인 후 API 키 발급 
+![image](https://user-images.githubusercontent.com/77951828/127791269-59a6713e-2490-4d9c-9052-533fd199d3d5.png)   
+3) js 파일 편집(API 키, 날씨 표시 위도/경도 입력) 
+![image](https://user-images.githubusercontent.com/77951828/127791325-e29c3484-18fd-49b7-83ad-027682cc4f58.png)   
+![image](https://user-images.githubusercontent.com/77951828/127791474-657fb592-0417-478c-8d0c-48df15293cb0.png)
+
+-----------------------------
+
+#### 4. 구글 포토 연동 배경화면 설정   
+1) 패키지 설치 : [MMM-GooglePhotos](https://github.com/aneaville/MMM-GooglePhotos)     
+2) Actions on Google 에 사용할 기기 등록 및 증명서 발급   
+![image](https://user-images.githubusercontent.com/77951828/127792604-4f931595-0072-47f9-a082-b44dda3daaf4.png)   
+3) Google Cloud Flatform 에 프로젝트 생성 및 사용자 등록   
+![image](https://user-images.githubusercontent.com/77951828/127792757-e199a6ac-4a06-48ae-9ba5-385de5211367.png)   
+4) 메뉴얼에 따라 인증 토큰 생성      
+$ node generate_token.js     
+-> 제공되는 Url에 구글 계정으로 로그인하여 생성되는 문자열 입력      
+5) 구글 포토에 앨범 생성     
+![image](https://user-images.githubusercontent.com/77951828/127792941-2d5b9bc7-a826-4a36-b918-a539da11def8.png)    
+6) js 파일 편집    
+![image](https://user-images.githubusercontent.com/77951828/127793020-18493b5e-fe29-4acc-8681-0d7306017102.png)   
+
+------------------------------
+
+#### 5. 구글 어시스턴트 연동 
+1) 패키지 설치 : [MMM-Detector](https://github.com/bugsounet/MMM-Detector), [MMM-GoogleAssistant](https://github.com/bugsounet/MMM-GoogleAssistant)
+Detector : 음성 인식 / GoogleAssistant : d
+3) Actions on Google 에 사용할 기기 등록 및 증명서 발급 (4-2와 동일) 
+4) Google Cloud Flatform 에 프로젝트 생성 및 사용자 등록 (4-3과 동일)
+5) 인증 토큰 생성 
+$ npm run tokens
+-> 제공되는 Url에 구글 계정으로 로그인하여 생성되는 문자열 입력 
+
+
+
